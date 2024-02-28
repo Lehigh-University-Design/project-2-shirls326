@@ -1,0 +1,4 @@
+# dotenv environment variables file
+# making sure my mongodb stuff does NOT get leaked
+.env
+node_modules/*
