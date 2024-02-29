@@ -1,4 +1,11 @@
+:root{
+    --backgroundColor: #FFF9FA;
+    --accent: rgb(255, 156, 217);
+}
+
+
 body{
+    background-color: var(--backgroundColor);
     margin: 0;
     padding: 0;
 }
@@ -15,14 +22,12 @@ body{
 
 h3{
     font-size: 3em;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
 
 }
-p{
-    font-family: "open-sans", sans-serif;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 1.25em;
-}
+
 
 ul, li{
     font-family: "open-sans", sans-serif;
@@ -39,18 +44,27 @@ ul, li{
     width: 100%;
     height: auto;
     justify-content: space-around;
+ 
 
 }
 
 .left{
-    width: 100%;
-    background-color: aqua;
+    width: auto;
+    background-color: var(--backgroundColor);
+    padding: 2vh;
+    p{
+        font-family: "open-sans", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        font-size: 1.25em;
+    }
 }
 
 .right{
-    background-color: purple;
-    width: 100%;
+    background-color: var(--backgroundColor);
+    width: auto;
     /* margin-bottom: 1.5em; */
+    padding: 1em;
 }
 
 .infoContainer{
@@ -64,7 +78,14 @@ ul, li{
     border-radius: 7px;
     border-color: rgb(255, 156, 217);
     border-style: solid;
-    padding: 1em;
+    padding: 1em; 
+
+    p{
+        font-family: "open-sans", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        font-size: 1.25em;
+    }
 
 
 
@@ -74,6 +95,9 @@ ul, li{
 .pinkContainer{
     /* position: sticky;
     margin-top: -3em;; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    padding: 0.5em 1em;
 
     background-color: #FA5699;
     width: auto;
@@ -81,6 +105,7 @@ ul, li{
     flex-shrink: 0; 
     margin: 1em;
     border-radius: 10px;
+
 
 
 
