@@ -58,6 +58,16 @@ ul, li{
         font-style: normal;
         font-size: 1.25em;
     }
+
+
+    ol, li{
+        font-family: "open-sans", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: normal;
+    }
+
 }
 
 .right{
