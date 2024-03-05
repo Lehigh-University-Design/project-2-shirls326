@@ -4,10 +4,14 @@
 }
 
 
+
 body{
     background-color: var(--backgroundColor);
+    /* background-color: green; */
     margin: 0;
     padding: 0;
+    font-optical-sizing: auto;
+    /* width: 100%; */
 }
 .head{
     font-size: 2.5em;
@@ -15,13 +19,13 @@ body{
     text-align: center;
     justify-content: center;
     background-color: red;
-    min-width: 30vw;
-    min-height:  40vh;
-    height: auto;
+    width: auto;
+    /* min-height:  50vh; */
+    /* height: auto; */
 }
 
 h3{
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0;
     margin: 0;
     font-weight: 100;
@@ -39,11 +43,9 @@ ul, li{
 .main{
     display: grid;
     grid-template-columns: 5fr 2fr;
-
-    /* flex-direction: row; */
-    width: 100%;
-    height: auto;
+    width: auto;
     justify-content: space-around;
+    /* margin: 1em; */
  
 
 }
@@ -51,12 +53,15 @@ ul, li{
 .left{
     width: auto;
     background-color: var(--backgroundColor);
-    padding: 2vh;
+    padding: 10vh;
     p{
         font-family: "open-sans", sans-serif;
         font-weight: 250;
         font-style: normal;
         font-size: 1.25em;
+        line-height: 2;
+        
+
     }
 
 
@@ -66,6 +71,7 @@ ul, li{
         font-style: normal;
         font-size: 1.15em;
         line-height: normal;
+        line-height: 2;
     }
 
 }
@@ -75,6 +81,7 @@ ul, li{
     width: auto;
     /* margin-bottom: 1.5em; */
     padding: 1em;
+    /* margin-top: -10em; */
 }
 
 .infoContainer{
@@ -120,3 +127,52 @@ ul, li{
 
 
 }
+
+
+/* changing media */
+
+
+
+@media only screen and (max-width: 768px) {
+
+ 
+    body {
+        /* display: block; */
+        /* background-color: var(--backgroundColor); */
+        margin: 0;
+        padding: 0;
+    }
+
+    .head {
+        font-size: 2em; /* Adjust the font size for smaller screens */
+        margin: 0;
+    }
+
+    .main {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+
+    .left, .right {
+       
+        padding: 2em; /* Add some padding to the columns */
+    }
+
+    .pinkContainer {
+        font-size: 1.1em; /* Adjust the font size for smaller screens */
+    }
+
+    .infoContainer {
+        max-width: 100%; /* Ensure the container takes up the full width */
+        margin: 1em ; 
+       /* padding: 1em; */
+    }
+
+ 
+
+
+
+}
+
+
+
+
