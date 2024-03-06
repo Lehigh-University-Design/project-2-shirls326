@@ -17,15 +17,59 @@ body{
     font-size: 2.5em;
     display: flex;
     text-align: center;
-    justify-content: center;
+    position: relative;
+    text-align: center;
+
     background-color: red;
+
     width: auto;
-    /* min-height:  50vh; */
+    /* height: 100px; */
+    height:  500px;
+    /* object-fit: scale-down; */
+    
+    
+    
     /* height: auto; */
+}
+
+.head img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.headerText{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    font-family: "Overlock SC";
+    .steakSVG{
+        height: 1em;
+        width: auto;
+    }
+
+}
+h2{
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+
 }
 
 h3{
     font-size: 2.5em;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+
+}
+
+h4{
+    font-size: 2em;
     padding: 0;
     margin: 0;
     font-weight: 100;
@@ -77,11 +121,13 @@ ul, li{
 }
 
 .right{
-    background-color: var(--backgroundColor);
+
     width: auto;
     /* margin-bottom: 1.5em; */
     padding: 1em;
     /* margin-top: -10em; */
+
+    max-height: 100%;
 }
 
 .infoContainer{
@@ -95,7 +141,11 @@ ul, li{
     border-radius: 7px;
     border-color: rgb(255, 156, 217);
     border-style: solid;
-    padding: 1em; 
+    padding: 1em;
+    h3{
+        font-family: "Satisfy", cursive;
+        font-weight: 100;
+    } 
 
     p{
         font-family: "open-sans", sans-serif;
@@ -112,6 +162,7 @@ ul, li{
 .pinkContainer{
     /* position: sticky;
     margin-top: -3em;; */
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3em;
     padding: 0.5em 1em;
@@ -122,10 +173,26 @@ ul, li{
     flex-shrink: 0; 
     margin: 1em;
     border-radius: 10px;
+    position: relative;
+    top: -13vh;
 
 
 
 
+}
+
+.steakImg{
+    padding: 1em;
+    aspect-ratio: 3/2;
+    height: auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.directHeader{
+    font-family: "Satisfy", cursive;
+    font-weight: 100;
+    font-size: 2.5em;
 }
 
 
