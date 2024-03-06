@@ -132,7 +132,6 @@ ul, li{
         
         li{
             list-style-type: none;
-
             position: relative;
  
             
@@ -237,6 +236,18 @@ ul, li{
     font-family: "Satisfy", cursive;
     font-weight: 100;
     font-size: 2.5em;
+}
+
+.tipsTricks{
+
+    ul{
+   
+        list-style-type: circle;
+        position: relative;
+ 
+
+    }
+    
 }
 
 
