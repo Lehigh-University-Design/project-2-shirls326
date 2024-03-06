@@ -7,10 +7,13 @@
     width: auto;
     line-height: 2;
     h2{
+        font-family: "Satisfy", cursive;
         font-weight: 700;
  
     }
     h4{
+        font-family: "open-sans", sans-serif;
+        font-weight: 400;
         font-size: 1.5em;
     }
     

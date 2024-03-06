@@ -116,7 +116,51 @@ ul, li{
         font-size: 1.15em;
         line-height: normal;
         line-height: 2;
+  
+        
+        
     }
+    .customRecipe {
+
+        font-family: "open-sans", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: normal;
+        line-height: 2;
+        counter-reset: step-counter;
+        
+        li{
+            list-style-type: none;
+
+            position: relative;
+ 
+            
+        }
+
+        
+
+      
+      }
+      .customRecipe  li::before {
+        display: inline-block; /*actually making it fill the numbers all the way */
+        counter-increment: step-counter;
+        content: counter(step-counter);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #FA5699;
+        /* padding: 10px;; */
+        width: 30px; 
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;;
+        text-align: center;
+        color:white;
+        font-family: "Satisfy", cursive;
+
+
+      }
+  
 
 }
 
@@ -185,7 +229,7 @@ ul, li{
     padding: 1em;
     aspect-ratio: 3/2;
     height: auto;
-    width: 70%;
+    width: 80%;
     margin-bottom: 20px;
 }
 
